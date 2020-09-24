@@ -8,6 +8,11 @@ body{
     color: #444444;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 /*header*/
 
 header{
@@ -170,7 +175,7 @@ header .logo h1 a{
 
 /*section*/
 
-section{
+.first{
   width: 100%;
   height: calc(100vh - 72px);
   background: url(hero.jpg) center center;
@@ -179,7 +184,7 @@ section{
   background-attachment: fixed;
   padding: 0;
 }
-section:before {
+.first:before {
   content: "";
   background: rgba(0, 0, 0, 0.4);
   position: absolute;
@@ -188,7 +193,7 @@ section:before {
   left: 0;
   right: 0;
 }
-section h1{
+.first h1{
   font-size: 48px;
   font-weight: 700;
   font-family: "Raleway", sans-serif;
@@ -202,7 +207,7 @@ section h1{
   left: 13.44%;
   top:42%
 }
-section h2{
+.first h2{
   font-size: 24px;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 35px;
@@ -215,7 +220,7 @@ section h2{
   top: 52%;
   left: 13.4%;
 }
-section a{
+.first a{
   text-decoration: none;
   font-size: 24px;
   font-weight: 500;
@@ -259,7 +264,6 @@ button:before{
   top: 0;
   left: 0;
   opacity: .5s;
-  filter: blur(30px);
 }
 button:after{
   content: '';
@@ -284,13 +288,14 @@ button:hover:before{
 
 @media (max-width: 768px){
 
-  section{
+  .first {
     width: 100%;
     height: calc(100vh - 72px);
     background: url(hero.jpg) center center;
+    background-attachment: fixed;
     background-size: cover;
   }
-  section:before {
+  .first:before {
     content: "";
     background: rgba(0, 0, 0, 0.4);
     position: absolute;
@@ -299,21 +304,22 @@ button:hover:before{
     left: 0;
     right: 0;
   }
-  section h1{
+  .first  h1{
     font-size: 27px;
     font-weight: 700;
+    text-align: center;
     font-family: "Raleway", sans-serif;
     line-height: 56px;
     color: #fff;
     transition: 2.5s;
     transform-origin: bottom;
   }
-  .h1{
+  .first .h1{
     position: absolute;
     left: 25%;
     top:34%
   }
-  section h2{
+  .first h2{
     font-size: 18px;
     color: rgba(255, 255, 255, 0.7);
     margin-bottom: 35px;
@@ -323,12 +329,12 @@ button:hover:before{
     transform-origin: bottom;
     text-align: center;
   }
-  .h2{
+  .first .h2{
     position: absolute;
     top: 43%;
     left: 0;
   }
-  section a{
+  .first  a{
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -472,14 +478,18 @@ button:hover:before{
     overflow: hidden;
   }
   .about h3 {
-    font-weight: 300px;
+    font-weight: 300;
     font-size: 34px;
     letter-spacing: 0.1px;
+    margin-top: 8%;
     color: #21413c;
     margin-left: 0;
     margin-right: 0;
   }
-
+  .p{
+    margin-top: 5%;
+    text-align: justify;
+  }
   .about .text {
     margin-top: 44px;
   }
@@ -490,17 +500,19 @@ button:hover:before{
   }
 
   .about .text h4 {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 300px;
-    margin-left: 15%;
+    margin-left: 14%;
     margin-right: 0;
   }
 
   .about .text p {
     font-size: 15px;
-    margin-left: 15%;
+    margin-left: 14%;
+    margin-top: 2%;
     letter-spacing: 0.2px;
-    margin-right: 0;
+    margin-right: -10%;;
+    text-align: justify;
 
   }
   .about .container {
@@ -603,6 +615,7 @@ button:hover:before{
     color: #aaaaaa;
     font-size: 15px;
     padding: 0;
+    text-align: justify;
     margin: 0;
   }
 }
@@ -654,7 +667,7 @@ button:hover:before{
 }
 @media (max-width: 768px) {
   .fourth .container{
-    margin-top: 170%;
+    margin-top: 34%;
     position: relative;
     width:100%;
     display: flex;
@@ -662,7 +675,7 @@ button:hover:before{
   }
   .fourth .container .row{
     display: block;
-    margin-left: 6.8%;
+    margin-left: 0;
   }
 
   .fourth .a{
@@ -682,7 +695,8 @@ button:hover:before{
   }
   .fourth .a p{
     font-size: 14px;
-    margin-left: 10%;
+    margin-left: 9.9%;
+    text-align: left;
     margin-right: 5%;
     margin-bottom: 5%;
   }
@@ -703,7 +717,7 @@ button:hover:before{
 .fifth .container{
   position: relative;
   width: 100%;
-  background-color: #fff;
+  background-color: #ffff;
   margin-top: 200px;
   height: 100%;
 }
@@ -727,7 +741,7 @@ button:hover:before{
   margin-left: 17%;;
 }
 .four > div{
-  background-color: #f1f1f1;
+  background-color: #fff;
   width: 250px;
   justify-content: center;
   text-align: center;
@@ -761,7 +775,7 @@ border: 5px solid #fff;
     width: 100%;
     height: 100%;
     background-color: #fff;
-    margin-top: 100%;;
+    margin-top: 25%;;
   }
   .fifth h2{
     margin-top: 0;
@@ -817,8 +831,7 @@ border: 5px solid #fff;
 /*Sixth Section*/
 .sixth{
   margin-top: 8%;
-  margin-left: 5%;
-  margin-right: 18%;
+  margin-bottom: 25%;
 }
 .sixth .container{
   background-color: #fff;
@@ -826,7 +839,7 @@ border: 5px solid #fff;
   width: 100%;
   position: relative;
 }
-h2{
+.sixth h2{
   text-align: center;
   font-size: 2.5em;
   font-weight: 50;
@@ -834,50 +847,60 @@ h2{
   margin-bottom: 6%;
   color: #21413c
 }
-p{
-  margin-bottom: 4%;
+.sixth p{
+  margin-left: 15%;
+  margin-bottom: 2%;
+  margin-right: 15%;
 }
-.slider{
+.sixth hr{
+  display: none;
+}
+.sixth .slider{
   display: flex;
   flex-direction: row;
   padding: 10px;
 }
 
-.slide p{
-  margin-top: 15%;
+.sixth .slide p{
+  margin-top: 1%;
+  margin-right: 68%;
   padding: 5px;
   color: #21413c;
 }
-.slide h3{
+.sixth .slide h3{
   margin-top: 3%;
+    margin-left: 15%;
 }
-.slide h4{
+.sixth .slide h4{
   margin-top: 2%;
   font-weight: 300;
+    margin-left: 15%;
   font-size: 15px;
 }
-.slide img{
+.sixth .slide img{
+  margin-left: 15%;
   margin-top: 7%;
-  width: 30%;
+  width: 15%;
   border-radius: 500px;
 }
-.testi p{
+.sixth .testi p{
   text-align: center;
+    margin-left: 15%;
 }
 @media (max-width: 768px) {
 
   .sixth{
-    margin-left: 2.5%;
-    margin-right: 2.5%;
+    margin-left: 0;
+    margin-right: 0;
   }
   .sixth .container{
-    margin-top: 150%;
+    margin-top: 34%;
     background-color: #fff;
     height: 100%;
     position: relative;
     width: 100%;
   }
-  h2{
+  .sixth h2{
     text-align: center;
     font-size: 2.5em;
     font-weight: 50;
@@ -885,7 +908,7 @@ p{
     margin-bottom: 6%;
     color: #21413c
   }
-  p{
+  .sixth p{
     margin-bottom: 4%;
     text-align: center;
     margin-left: 0;
@@ -897,31 +920,570 @@ p{
   }
 
   .slide p{
+    margin-top: 5%;
     text-align: center;
-    margin-top: 15%;
+    align-items: center;
+    width: 88%;
     padding: 5px;
+    margin-left: 0;
     color: #21413c;
   }
   .slide h3{
-    margin-left: 25%;
+    text-align: center;
+    margin-left: 0;
     margin-top: 3%;
   }
   .slide h4{
-    margin-left: 25%;
+    text-align: center;
+    margin-left: 0;
     margin-top: 2%;
     font-weight: 300;
     font-size: 15px;
   }
   .slide img{
-    margin-left: 25%;
-    margin-top: 7%;
-    width: 30%;
+    align-items: center;
+    margin-top: 10%;
+    width: 20%;
     border-radius: 500px;
   }
   .testi p{
-    margin-bottom: 4%;
+    margin-bottom: 7%;
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
   }
+  .sixth hr{
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+}
+
+  /*Seventh Secction*/
+
+
+  .seventh .title{
+    text-align: center;
+    margin-top: 5%;
+  }
+  .seventh .title h2{
+   text-align: center;
+   font-size: 34px;
+   font-weight: 200;
+   letter-spacing: 1px;
+   margin-bottom: 2%;
+  }
+  .seventh .title p{
+    margin-bottom: 5%;
+  }
+  .seventh img{
+    width: 100%;
+    height: 100%;
+  }
+  .seventh .portfolio-item {
+    margin-bottom: 30px;
+  }
+  .seventh ul{
+    text-align: center;
+  }
+  .seventh li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 3%;
+    line-height: 1;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+  }
+  .seventh li:hover{
+    color: #1bac91;
+  }
+  .seventh .img{
+      position: relative;
+      transition: 0.3s;
+      width: 25%;
+      height: 16%;
+      background: rgba(0, 0, 0, 0.5);
+      margin-left: 25%;
+      margin-bottom: 5%;
+  }
+  .seventh .img .info {
+    text-align: center;
+    color: #fff;
+  }
+  .seventh .img .info::before{
+    content: "";
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transition: 0.3s;
+  }
+
+  .seventh .img .info::after {
+    content: "";
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transition: 0.3s;
+  }
+  .seventh .img:hover .info {
+    opacity: 10;
+  }
+
+  .seventh  .img:hover .info::before {
+    top: 15px;
+    left: 15px;
+  }
+
+  .seventh  .img:hover .info::after {
+    bottom: 15px;
+    right: 15px;
+  }
+
+
+  @media (max-width:768px){
+
+    .seventh .title{
+      text-align: center;
+      margin-top: 5%;
+    }
+    .seventh .title h2{
+     text-align: center;
+     font-size: 34px;
+     font-weight: 200;
+     letter-spacing: 1px;
+     margin-bottom: 2%;
+    }
+    .seventh .title p{
+      margin-bottom: 5%;
+    }
+    .seventh img{
+      width: 100%;
+      height: 100%;
+    }
+    .seventh  .portfolio-item {
+      margin-bottom: 30px;
+    }
+    .seventh ul{
+      text-align: center;
+    }
+    .seventh  li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 3%;
+      line-height: 1;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
+    }
+    .seventh li:hover{
+      color: #1bac91;
+    }
+    .seventh img{
+      width: 100%;
+      height: 100%;
+    }
+    .seventh .flex{
+      display: block;
+    }
+    .seventh .img{
+        margin-bottom: 5%;
+        position: relative;
+        transition: 0.3s;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        margin: 0;
+        margin-bottom: 5%;
+    }
+    .seventh .img:hover{
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 1000%;
+    }
+    .seventh .img .info:hover {
+      text-align: center;
+      color: #fff;
+    }
+    .seventh .img .info::before{
+      content: "";
+      width: 25%;
+      height: 25%;
+      position: absolute;
+      top: 55px;
+      left: 55px;
+      border-top: 3px solid #fff;
+      border-left: 3px solid #fff;
+      transition: 0.3s;
+      visibility: hidden;
+    }
+
+    .seventh .img .info::after {
+      content: "";
+      width: 25%;
+      height: 25%;
+      position: absolute;
+      bottom: 55px;
+      right: 55px;
+      border-bottom: 3px solid #fff;
+      border-right: 3px solid #fff;
+      transition: 0.3s;
+      visibility: hidden;
+    }
+    .seventh .img:hover .info {
+      opacity: 10;
+    }
+
+    .seventh .img:hover .info::before {
+      top: 15px;
+      left: 15px;
+      visibility: visible;
+    }
+
+    .seventh .img:hover .info::after {
+      bottom: 15px;
+      right: 15px;
+      visibility: visible;
+    }
+  }
+
+
+
+/*section eighth*/
+.eight .container{
+  background-color: #fff;
+  margin-top: 12%;
+}
+
+.eight .container .team h2{
+  color: darkgreen;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 10%;
+  margin-bottom: 3%
+}
+.eight .team p{
+  font-size: 14px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.eight .row{
+  display: flex;
+  padding: 10px;
+  width: 75%;
+  align-items:center;
+  margin-left: 12%;
+  margin-right: 7%;
+}
+.eight .row h4{
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+}
+.eight .row span{
+  font-size: 15px;
+  font-style: italic;
+  color: #fff;
+  margin-bottom: 10%;
+  text-align: center;
+}
+
+.eight .image{
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+
+.eight img{
+  width: 100%;
+  padding: 20px;
+}
+
+.eight .slide {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+.eight .content {
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 70%;
+  transition: all 0.4s ease-in-out;
+}
+.eight .image:hover .slide{
+  visibility: visible;
+  background-color: #000;
+  opacity: 50%;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 12%;
+}
+
+@media (max-width: 768px) {
+  .eight .team h2{
+    color: darkgreen;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 10%;
+    margin-bottom: 5%
+  }
+  .eight .team p{
+    font-size: 14px;
+    margin-bottom: 5%;
+    text-align: center;
+  }
+  .eight .row{
+    display: block;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .eight .row h4{
+      font-weight: 700;
+      margin-bottom: 2px;
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+  }
+  .eight .row span{
+    font-size: 15px;
+    font-style: italic;
+    color: #fff;
+    margin-bottom: 10%;
+    text-align: center;
+  }
+  .eight .image{
+    padding: 0;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 5%;
+  }
+  .eight img{
+    width: 95%;
+    padding: 0;
+  }
+  .eight .slide {
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+  }
+  .eight .content {
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 70%;
+    transition: all 0.4s ease-in-out;
+  }
+  .eight .image:hover .slide{
+    visibility: visible;
+    background-color: #000;
+    opacity: 50%;
+    margin-left: 0%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 5%;
+  }
+}
+/*Section 9th*/
+
+.ninth .title h2{
+  color: darkgreen;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 7%;
+  margin-bottom: 5%
+}
+.ninth .title p{
+  font-size: 14px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.ninth .list ul{
+  list-style: none;
+}
+.ninth .list a{
+  margin-left: 25%;
+  margin-right: 25%;
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+.ninth .list p{
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 5%;
+  visibility: hidden;
+}
+.ninth .list:hover a{
+  color: #97cac2;
+}
+.ninth .list:hover p{
+  visibility: visible;
+}
+@media (max-width: 768px) {
+  .ninth .title h2{
+    color: darkgreen;
+    font-size: 34px;
+    text-align: center;
+    font-weight: 300;
+    margin-top: 7%;
+    margin-bottom: 5%
+  }
+  .ninth .title p{
+    font-size: 14px;
+    margin-bottom: 5%;
+    text-align: center;
+    margin-bottom: 15%;
+  }
+  .ninth .list ul{
+    list-style: none;
+  }
+  .ninth .list a{
+    margin-left: 2%;
+    text-align: justify;
+    margin-right: 5%;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+  }
+  .ninth .list p{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    visibility: hidden;
+  }
+  .ninth .list:hover a{
+    color: #97cac2;
+  }
+  .ninth .list:hover p{
+    visibility: visible;
+  }
+}
+
+/*section 10th*/
+
+.tenth .title h2{
+  color: darkgreen;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 10%;
+  margin-bottom: 5%
+}
+.tenth .title p{
+  font-size: 14px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.tenth .info{
+  position: absolute;
+  left: 10%;
+  margin-top: 3%;
+  width: 50%;
+}
+.tenth .info h4{
+  padding: 5px;
+  font-size: 25px;
+  color: #444444;
+}
+.tenth .info p{
+  color: green;
+}
+.tenth .map{
+  align-items: center;
+  margin-top: 2%;
+  left: 50%;
+  width: 40%;
+  height: 45%;
+  position: absolute;
+}
+.tenth .form{
+  align-items: center;
+  margin-left: 34%;
+  margin-top: 35%;
+}
+.tenth .form input{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+.tenth .form span{
+  position: absolute;
+}
+@media (max-width: 768px) {
+.tenth .title h2{
+  color: darkgreen;
+  font-size: 34px;
+  text-align: center;
+  font-weight: 300;
+  margin-top: 5%;
+  margin-bottom: 5%
+}
+.tenth .title p{
+  font-size: 14px;
+  margin-bottom: 5%;
+  text-align: center;
+}
+.tenth .info{
+  position: relative;
+  left: 5%;
+  width: 100%;;
+}
+.tenth .info h4{
+  font-size: 25px;
+  color: #444444;
+}
+.tenth .info p{
+  color: green;
+  margin-top: -1%;
+}
+.tenth .map{
+  align-items: center;
+  margin-top: 2%;
+  left: 5%;
+  width: 90%;
+  height: 45%;
+  position: absolute;
+}
+.tenth .form{
+  align-items: center;
+  margin-left: 15%;
+  margin-top: 100%;
+}
+.tenth .form input{
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+.tenth .form span{
+  position: relative;
+}
+
 }

@@ -864,6 +864,7 @@ border: 5px solid #fff;
 .sixth .slide p{
   margin-top: 1%;
   margin-right: 68%;
+  width: 50%;
   padding: 5px;
   color: #21413c;
 }
@@ -880,7 +881,7 @@ border: 5px solid #fff;
 .sixth .slide img{
   margin-left: 15%;
   margin-top: 7%;
-  width: 15%;
+  width: 35%;
   border-radius: 500px;
 }
 .sixth .testi p{
@@ -918,14 +919,19 @@ border: 5px solid #fff;
     display: block;
     padding: 10px;
   }
-
+  #one{
+	  visibility: hidden;
+  }
+  #two{
+	  visibility: hidden;
+  }
   .slide p{
     margin-top: 5%;
     text-align: center;
     align-items: center;
-    width: 88%;
+    width: 150%;
     padding: 5px;
-    margin-left: 0;
+	left: 25%;
     color: #21413c;
   }
   .slide h3{
@@ -966,14 +972,17 @@ border: 5px solid #fff;
     margin-top: 5%;
   }
   .seventh .title h2{
-   text-align: center;
-   font-size: 34px;
-   font-weight: 200;
-   letter-spacing: 1px;
-   margin-bottom: 2%;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 50;
+    letter-spacing: 2px;
+    margin-bottom: 6%;
+    color: #21413c;
   }
   .seventh .title p{
-    margin-bottom: 5%;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    margin-right: 15%;
   }
   .seventh img{
     width: 100%;
@@ -1166,17 +1175,17 @@ border: 5px solid #fff;
 }
 
 .eight .container .team h2{
-  color: darkgreen;
-  font-size: 34px;
   text-align: center;
-  font-weight: 300;
-  margin-top: 10%;
-  margin-bottom: 3%
+  font-size: 2.5em;
+  font-weight: 50;
+  letter-spacing: 2px;
+  margin-bottom: 6%;
+  color: #21413c;
 }
 .eight .team p{
-  font-size: 14px;
-  margin-bottom: 5%;
-  text-align: center;
+  margin-left: 15%;
+  margin-bottom: 2%;
+  margin-right: 15%;
 }
 .eight .row{
   display: flex;
@@ -1313,16 +1322,17 @@ border: 5px solid #fff;
 /*Section 9th*/
 
 .ninth .title h2{
-  color: darkgreen;
-  font-size: 34px;
   text-align: center;
-  font-weight: 300;
-  margin-top: 7%;
-  margin-bottom: 5%
+  font-size: 2.5em;
+  font-weight: 50;
+  letter-spacing: 2px;
+  margin-bottom: 6%;
+  color: #21413c;
 }
 .ninth .title p{
-  font-size: 14px;
-  margin-bottom: 5%;
+  margin-left: 15%;
+  margin-bottom: 2%;
+  margin-right: 5%;
   text-align: center;
 }
 .ninth details{
@@ -1398,16 +1408,18 @@ summary::-webkit-details-marker {
 /*section 10th*/
 
 .tenth .title h2{
-  color: darkgreen;
-  font-size: 34px;
   text-align: center;
-  font-weight: 300;
+  font-size: 2.5em;
+  font-weight: 50;
+  letter-spacing: 2px;
+  margin-bottom: 6%;
   margin-top: 10%;
-  margin-bottom: 5%
+  color: #21413c;
 }
 .tenth .title p{
-  font-size: 14px;
-  margin-bottom: 5%;
+  margin-left: 15%;
+  margin-bottom: 2%;
+  margin-right: 5%;
   text-align: center;
 }
 .tenth .info{
@@ -1495,5 +1507,153 @@ summary::-webkit-details-marker {
 .tenth .form span{
   position: relative;
 }
+}
 
+footer{
+  color: #fff;
+  margin-top: 2%;
+  background-color: #092532;
+  height: 250px;
+}
+.footer a{
+  text-decoration: none;
+  color: #aaaaaa;
+}
+.footer .maxim{
+margin-top: 2%;
+  position: absolute;
+  top: 5px;
+  left: 150px;
+  padding: 5px;
+}
+.footer .links{
+margin-top: 2%;
+  position: absolute;
+  left: 500px;
+}
+.footer .links li{
+  padding: 5px;
+}
+.footer .services{
+margin-top: 2%;
+  position: absolute;
+  left: 750px;
+}
+.footer .services li{
+  padding: 5px;
+}
+.footer .newsletter{
+margin-top: 2%;
+  position: absolute;
+  left: 1025px;
+}
+.footer .container{
+  position: relative;
+  margin-bottom: 10%;
+  padding: 10px;
+}
+.footer .copyright{
+  position: relative;
+  margin-top: 15%;
+  text-align: center;
+  background-color: black;
+  padding: 5px;
+}
+.footer .newsletter form input[type="email"]{
+  padding: 10px;
+  width: 75%;
+}
+.footer .newsletter form input[type="submit"]{
+  background-color: lightgreen;
+  padding: 10px;
+}
+.footer .newsletter form:hover input[type="submit"]{
+  background: green;
+}
+.footer .copyright .span{
+  font-size: 14px
+}
+.footer .copyright .a{
+  font-size: 13px;
+}
+.footer .copyright .a a{
+  color: #96bb7c;
+}
+@media (max-width: 768px) {
+  footer{
+    padding: 5px;
+    color: #fff;
+    background-color: #092532;
+    height: 100%;
+  }
+  .footer a{
+    text-decoration: none;
+    color: #aaaaaa;
+  }
+  .footer .maxim{
+    position: relative;
+    top: 5px;
+    margin-bottom: 5%;
+    padding: 5px;
+    left: 0;
+  }
+  .footer .links{
+    position: relative;
+    margin-bottom: 5%;
+    padding: 5px;
+    left: 0;
+  }
+  .footer .links li{
+    margin-left: 5%;
+    padding: 5px;
+  }
+  .footer .services{
+    position: relative;
+    margin-bottom: 5%;
+    padding: 5px;
+    left: 0;
+  }
+  .footer .services li{
+    margin-left: 5%;
+    padding: 5px;
+  }
+  .footer .newsletter{
+    position: relative;
+    margin-bottom: 5%;
+    padding: 10%;
+    left: 0;
+    border-radius: 10px;
+  }
+  .footer .container{
+    position: relative;
+    margin-bottom: 10%;
+    padding: 10px;
+  }
+  .footer .copyright{
+    position: relative;
+    margin-top: 15%;
+    text-align: center;
+    background-color: black;
+    padding: 5px;
+  }
+  .footer .newsletter form input[type="email"]{
+    padding: 10px;
+    width: 75%;
+  }
+  .footer .newsletter form input[type="submit"]{
+    background-color: lightgreen;
+    padding: 10px;
+  }
+  .footer .newsletter form:hover input[type="submit"]{
+    background: green;
+  }
+  .footer .copyright .span{
+    font-size: 14px
+  }
+  .footer .copyright .a{
+    font-size: 13px;
+  }
+  .footer .copyright .a a{
+    color: #96bb7c;
+  }
 }

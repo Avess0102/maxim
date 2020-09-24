@@ -307,6 +307,7 @@ button:hover:before{
   .first  h1{
     font-size: 27px;
     font-weight: 700;
+    margin-left: -3%;
     text-align: center;
     font-family: "Raleway", sans-serif;
     line-height: 56px;
@@ -915,7 +916,7 @@ border: 5px solid #fff;
     margin-bottom: 4%;
     text-align: center;
     margin-left: 5%;
-    margin-right: 7%;
+    margin-right: 10%;
   }
   .slider{
     display: block;

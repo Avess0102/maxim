@@ -1325,28 +1325,33 @@ border: 5px solid #fff;
   margin-bottom: 5%;
   text-align: center;
 }
-.ninth .list ul{
-  list-style: none;
+.ninth details{
+  background-color: #d9ecf2;
+  opacity: 80%;
+  padding: 20px;
+  margin-left: 18%;
+  margin-right: 12%;
+  margin-bottom: 2.5%;
+  border-radius: 10px;
+  box-shadow: 1px 2px 4px rgba(0,0,0,0.6);
+  height: 50%;;
+
 }
-.ninth .list a{
-  margin-left: 25%;
-  margin-right: 25%;
-  font-weight: 500;
-  text-decoration: none;
-  color: black;
+summary{
+  margin-left: 0;
+  border-color: #d9ecf2;
+  outline: none;
+  cursor: pointer;
 }
-.ninth .list p{
-  margin-left: 25%;
-  margin-right: 25%;
-  margin-bottom: 5%;
-  visibility: hidden;
+.ninth .p{
+  text-align: justify;
+  margin-left: 1%;
+  margin-right: 1%;
 }
-.ninth .list:hover a{
-  color: #97cac2;
+summary::-webkit-details-marker {
+  float: right;
 }
-.ninth .list:hover p{
-  visibility: visible;
-}
+
 @media (max-width: 768px) {
   .ninth .title h2{
     color: darkgreen;
@@ -1360,32 +1365,35 @@ border: 5px solid #fff;
     font-size: 14px;
     margin-bottom: 5%;
     text-align: center;
-    margin-bottom: 15%;
   }
-  .ninth .list ul{
-    list-style: none;
+  .ninth details{
+    background-color: #d9ecf2;
+    opacity: 80%;
+    padding: 20px;
+    margin-left: 1.8%;
+    margin-right: 1.2%;
+    margin-bottom: 2.5%;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.6);
+    height: 50%;;
+
   }
-  .ninth .list a{
-    margin-left: 2%;
+  summary{
+    margin-left: 0;
+    border-color: #d9ecf2;
+    outline: none;
+    cursor: pointer;
+  }
+  .ninth .p{
     text-align: justify;
-    margin-right: 5%;
-    font-weight: 500;
-    text-decoration: none;
-    color: black;
+    margin-left: 1%;
+    margin-right: 1%;
   }
-  .ninth .list p{
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-    visibility: hidden;
-  }
-  .ninth .list:hover a{
-    color: #97cac2;
-  }
-  .ninth .list:hover p{
-    visibility: visible;
+  summary::-webkit-details-marker {
+    float: right;
   }
 }
+
 
 /*section 10th*/
 
@@ -1443,12 +1451,12 @@ border: 5px solid #fff;
   font-size: 34px;
   text-align: center;
   font-weight: 300;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 5%
 }
 .tenth .title p{
   font-size: 14px;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
   text-align: center;
 }
 .tenth .info{
@@ -1458,15 +1466,17 @@ border: 5px solid #fff;
 }
 .tenth .info h4{
   font-size: 25px;
+  margin-bottom: 2%;
   color: #444444;
 }
 .tenth .info p{
   color: green;
+  margin-bottom: 3%;
   margin-top: -1%;
 }
 .tenth .map{
   align-items: center;
-  margin-top: 2%;
+  margin-top: 8%;
   left: 5%;
   width: 90%;
   height: 45%;

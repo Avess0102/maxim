@@ -864,8 +864,6 @@ border: 5px solid #fff;
   flex-direction: row;
   padding: 10px;
 }
-
-
 .sixth .slide p{
   margin-top: 1%;
   margin-right: 68%;
@@ -875,7 +873,7 @@ border: 5px solid #fff;
 }
 .sixth .slide h3{
   margin-top: 3%;
-    margin-left: 15%;
+  margin-left: 15%;
 }
 .sixth .slide h4{
   margin-top: 2%;
